@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PrikazRastave.si</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="scroll.js"></script>
+
+  </head>
+  <body id="myPage">
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home white"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">JEZIK
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="indexE.html">Angleščina</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12" style=" border-style: ridge; border-radius:10px">
+          <div style="height:100vh; overflow-y:scroll; " id="scroling">
+            <img src="./Sobe/tloris.jpg" id="img_ID" width="100%"  alt="" usemap="#map" />
+            <map name="map" id="map_ID'">
+              <area  alt="" title="" href="soba3in4.html" shape="poly" data-original-coords="606,64,691,64,694,57,842,58,842,256,647,254,644,206,644,202,607,203"/>
+              <area  alt="" title="" href="soba1.html" shape="poly" data-original-coords="519,263,488,262,489,354,635,353,636,256,518,253"/>
+              <area  alt="" title="" href="soba9.html" shape="poly" data-original-coords="348,254,230,251,231,354,376,352,378,263,347,263"/>
+              <area  alt="" title="" href="soba5in6.html" shape="poly" data-original-coords="20,45,21,140,380,141,379,87,436,87,437,146,421,147,421,202,513,201,512,144,606,142,605,119,600,117,599,44"/>
+              <area  alt="" title="" href="soba7in8.html" shape="poly" data-original-coords="20,185,18,275,180,276,180,288,19,289,20,381,219,380,220,288,205,289,205,278,219,276,217,262,179,262,178,253,230,250,233,217,219,214,217,187"/>
+            </map>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+    $(function () {
+        function adjeustCoords() {
+            var image=$('#img_ID');
+            var originalWidth=image[0].naturalWidth;
+            var currentWidth=image.width();
+            var ratio=currentWidth/originalWidth;
+            $("map area").each(function(){
+                var coords=$(this).attr('data-original-coords').split(',');
+                coords = coords.map(function (x) {
+                    return Math.round(x*ratio);
+                });
+                $(this).attr('coords',coords.join());
+            });
+        }
+        adjeustCoords();
+        $(window).resize(function(){
+            adjeustCoords();
+        });
+    });
+    $('#scroling').height($(window).height() - $('#nav').height()-(80-$('#nav').height()));
+   </script>
+  </body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PrikazRastave.si</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="scroll.js"></script>
+
+  </head>
+  <body id="myPage">
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home white"></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">JEZIK
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="room1.html">Angleščina</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5" style=" border-style: ridge; border-radius:10px">
+          <div style="height:100vh; overflow-y:scroll; margin-top:20px;" id="scroling2">
+            <img src="./Sobe/tloris1.jpg" id="img_ID" width="100%"  alt="" usemap="#map" />
+            <map name="map" id="map_ID'">
+              <area  alt="" title="" href="#myCarousel" shape="rect" data-original-coords="470,636,523,686"/>
+              <area  alt="" title="" href="#myCarousel1" shape="rect" data-original-coords="616,480,660,530"/>
+              <area  alt="" title="" href="#myCarousel2" shape="rect" data-original-coords="617,170,661,220"/>
+              <area  alt="" title="" href="#myCarousel3" shape="rect" data-original-coords="362,73,406,123" />
+              <area  alt="" title="" href="#myCarousel4" shape="rect" data-original-coords="96,290,140,340" />
+              <area  alt="" title="" href="#myCarousel5" shape="rect" data-original-coords="288,606,332,656" />
+              <area  alt="" title="" href="#myCarousel6" shape="rect" data-original-coords="334,472,378,522" />
+              <area  alt="" title="" href="#myCarousel7" shape="rect" data-original-coords="375,329,419,379" />
+              <area  alt="" title="" href="soba9.html" shape="rect" data-original-coords="92,693,247,743" />
+              <area  alt="" title="" href="soba2.html" shape="rect" data-original-coords="514,24,637,74" />
+              <area  alt="" title="" href="soba3in4.html" shape="rect" data-original-coords="93,28,250,78"/>
+            </map>
+          </div>
+        </div>
+        <div class="col-lg-7 divdiv" style="border-style: ridge; border-radius:10px" >
+          <div  id="scroling" style="height:100vh; overflow-y:scroll;  padding-top:10px; margin-bottom:30px;">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" >
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="./soba1/napis.jpg" alt="Napis">
+                </div>
+              </div>
+            </div>
+            <div id="band" class="text-center">
+                <h2>NAPIS</h2>
+                <p>Nuša &amp; Srečo Dragan<p>
+                <p>
+                  "Srečanje drug nasproti drugega z dotikom dlani z drevesom na sredini v parku tivoli."
+                </p>
+                <br>
+            </div>
+
+            <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="false"style="padding-top:10px;" >
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel1" data-slide-to="1"></li>
+              </ol>
+
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="./soba1/konceptna.png" alt="konceptna" id="myImg" >
+                </div>
+
+                <!------------------------------------------------------ >
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <span id="close1" class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                  <!-- Modal Content (The Image) -->
+                  <img class="modal-content" id="img01" width="100%">
+
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                </div>
+                <!------------------------------------------------------->
+
+                <div class="item">
+                  <iframe width="854" height="480" src="https://www.youtube.com/embed/sqqZc5bycKM" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div id="band" class="text-center">
+              <h2>KONCEPTNA TABLA 7</h2>
+              <p>
+                Gibljive slike, ki se kontekstualizirajo kot perceptivne in programirane situacije performansa v mediju filma (the expanded cinema) in OHO-jevih Poletnih projektih (land art).
+                Od leve proti desni:
+                1. koncept, fotografije in filmski skript – risbe pozicij premikanja za film,
+                2. prikazuje se film 72 ur zime, 72 ur jeseni, park Tivoli, Ljubljana, 1969,
+                3. koncept in fotodokumentacija projekta 16 m2 ali 40 x 50 cm peska pod steklom na Zemlji 21. junija 1969 ob 15. uri pred Moderno galerijo v Ljubljani.
+              </p>
+              <br>
+            </div>
+
+            <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="false"style="padding-top:10px;" >
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel2" data-slide-to="1"></li>
+              </ol>
+
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="./soba1/konceptna2.png" alt="koncepnta2" id="myImg2" >
+                </div>
+
+                <!------------------------------------------------------ >
+                <!-- The Modal -->
+                <div id="myModal2" class="modal">
+                  <span  id="close2" class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                  <!-- Modal Content (The Image) -->
+                  <img class="modal-content" id="img02" width="100%">
+
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                </div>
+                <!------------------------------------------------------->
+
+                <div class="item">
+                  <video width="100%" controls id="video1">
+                      <source src="./soba1/vi6.mp4" type="video/mp4">
+                  </video>
+                </div>
+
+                <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div id="band" class="text-center">
+              <h2>KONCEPTNA TABLA 8</h2>
+              <p>
+                Konceptualna umetnost, artikulirana v medijih teksta, fotografije, filma, happeninga in odtisa v reviji Ekran.
+                Od leve proti desni:
+                1. fotografija iz videa Belo mleko belih prsi, čb, zvok, 1969,
+                2. fotografija happeninga Različne stvari se razstavljajo, Titova cesta, Ljubljana, 1969,
+                3. fotografija projekta Stonoga, park Zvezda, Ljubljana, 1968,
+                4. prikazuje se film RG, čb, zvok, 1969.
+              </p>
+              <br>
+            </div>
+
+            <div id="myCarousel3" class="carousel slide" data-ride="carousel" data-interval="false" >
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <iframe width="854" height="480" src="https://www.youtube.com/embed/sqqZc5bycKM" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <div id="band" class="text-center">
+              <h2>72 UR ZIME, 72 UR JESENI</h2>
+              <p>Nuša &amp; Srečo Dragan<p>
+              <p>
+                Rekonstrukcija performansa 72 h zime 72 h jeseni in istoimenskega filma avtorjev Nuše in
+                Sreča Dragana iz leta 1969 s 360-stopinjskim video posnetkom, ki si ga obiskovalec, ko
+                vstavi pametni telefon v VR očala, lahko ogleda, kot bi bil prisoten na snemanju v parku
+                Tivoli v Ljubljani. Happening sodi med land art projekte skupine OHO. Pri rekonstrukciji gre
+                za avtorjev osebni prispevek k izumljanju metodologije arhiviranja na tehnologiji
+                zasnovane, nestabilne elektronsko-digitalne umetniške produkcije. V projektu sta poleg
+                avtorja sodelovala dr. Borut Batagelj iz Laboratorija za računalniški vid Fakultete za
+                računalništvo in informatiko (pod vodstvom dr. Franca Soline) in programer Aljaž Romih.
+              </p>
+              <br>
+            </div>
+
+            <div id="myCarousel4" class="carousel slide" data-ride="carousel" data-interval="false" >
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <video  width="100%" controls id="video3">
+                      <source src="./soba1/vi5.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div id="band" class="text-center">
+              <h2>BELO MLEKO BELIH PRSI</h2>
+              <p>Nuša &amp; Srečo Dragan<p>
+              <p>
+                Statičen črno-bel posnetek »slušno govorne grupne komunikacije zlogov«, ki je obveljal za
+                prvi video v jugoslovanskem prostoru.
+              </p>
+              <br>
+            </div>
+
+            <div id="myCarousel5" class="carousel slide" data-ride="carousel" data-interval="false" >
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <video  width="100%" controls id="video2">
+                      <source src="./soba1/vi6.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div id="band" class="text-center">
+              <h2>RG</h2>
+              <p>OHO, Atelje &#39;69 Moderna galerija, Ljubljana, 1969<p>
+              <p>
+                Na razstavi v Moderni galeriji so ohojevci stopnjevali novo estetiko »samovoljne« poetične
+                selekcijske in kombinacijske geste ter »romantike« materiala. Na razstavi se je ohojevcem
+                pridružil Srečo Dragan, ki je razstavljal ludistične in ironične objekte iz materialov, ki mu jih
+                je ponujala porabniška družba.
+              </p>
+              <br>
+            </div>
+
+            <div id="myCarousel6" class="carousel slide" data-ride="carousel" data-interval="false" >
+              <div class="carousel-inner" role="listbox">
+                <video  width="100%" controls id="video4">
+                    <source src="./soba1/vi4.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div id="band" class="text-center">
+              <h2>OČALA</h2>
+              <br>
+            </div>
+
+            <div id="myCarousel7" class="carousel slide" data-ride="carousel" data-interval="false" >
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="./soba1/drevo.jpg" alt="Drevo">
+                </div>
+              </div>
+            </div>
+            <div id="band" class="text-center">
+                <h2>DREVO</h2>
+                <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+
+      var videoPlayer_1 = document.getElementById("video1");
+      var videoPlayer_2 = document.getElementById("video2");
+      var videoPlayer_3 = document.getElementById("video3");
+      var videoPlayer_4 = document.getElementById("video4");
+
+
+      videoPlayer_3.addEventListener('click', function () {
+        if (videoPlayer_3.paused == false) {
+          videoPlayer_3.pause();
+          videoPlayer_3.firstChild.nodeValue = 'Play';
+        } else {
+          videoPlayer_3.play();
+          videoPlayer_3.firstChild.nodeValue = 'Pause';
+        }
+      });
+
+      videoPlayer_2.addEventListener('click', function () {
+        if (videoPlayer_2.paused == false) {
+          videoPlayer_2.pause();
+          videoPlayer_2.firstChild.nodeValue = 'Play';
+        } else {
+          videoPlayer_2.play();
+          videoPlayer_2.firstChild.nodeValue = 'Pause';
+        }
+      });
+
+      videoPlayer_1.addEventListener('click', function () {
+       if (videoPlayer_1.paused == false) {
+           videoPlayer_1.pause();
+           videoPlayer_1.firstChild.nodeValue = 'Play';
+       } else {
+           videoPlayer_1.play();
+           videoPlayer_1.firstChild.nodeValue = 'Pause';
+       }
+     });
+
+       videoPlayer_4.addEventListener('click', function () {
+        if (videoPlayer_4.paused == false) {
+            videoPlayer_4.pause();
+            videoPlayer_1.firstChild.nodeValue = 'Play';
+        } else {
+            videoPlayer_4.play();
+            videoPlayer_4.firstChild.nodeValue = 'Pause';
+        }
+     });
+
+     // Get the modal
+    var modal = document.getElementById('myModal');
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg');
+    var modalImg = document.getElementById("img01");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        $('.carousel-indicators').css('display','none');
+    }
+    var span = document.getElementById("close1");
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+      $('.carousel-indicators').css('display','block');
+    }
+
+    // Get the modal
+   var modal_2 = document.getElementById('myModal2');
+   // Get the image and insert it inside the modal - use its "alt" text as a caption
+   var img_2 = document.getElementById('myImg2');
+   var modalImg_2 = document.getElementById("img02");
+   img_2.onclick = function(){
+       modal_2.style.display = "block";
+       modalImg_2.src = this.src;
+       $('.carousel-indicators').css('display','none');
+   }
+   var span_2 = document.getElementById("close2");
+   // When the user clicks on <span> (x), close the modal
+   span_2.onclick = function() {
+     modal_2.style.display = "none";
+     $('.carousel-indicators').css('display','block');
+   }
+
+    $("map area").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('#scroling').scrollTo(hash,{
+          duration: 800
+        });
+
+      }
+    });
+
+    $(function () {
+        function adjeustCoords() {
+            var image=$('#img_ID');
+            var originalWidth=image[0].naturalWidth;
+            var currentWidth=image.width();
+            var ratio=currentWidth/originalWidth;
+            $("map area").each(function(){
+                var coords=$(this).attr('data-original-coords').split(',');
+                coords = coords.map(function (x) {
+                    return Math.round(x*ratio);
+                });
+                $(this).attr('coords',coords.join());
+            });
+        }
+        adjeustCoords();
+        $(window).resize(function(){
+            adjeustCoords();
+        });
+    });
+
+    $('#scroling').height($(window).height() - $('#nav').height() - (80-$('#nav').height()));
+    $('#scroling2').height($(window).height() - $('#nav').height()-(80-$('#nav').height()));
+
+   </script>
+  </body>
+</html>
